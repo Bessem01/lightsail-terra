@@ -5,8 +5,8 @@ provider "aws" {
 resource "aws_lightsail_instance" "example" {
   name              = "example-instance"
   availability_zone = "us-east-1a" 
-  blueprint_id      = "centos_7"   
-  instance_type     = "nano_2_0"   
+ blueprint_id      = "amazon_linux_2"
+  bundle_id         = "nano_1_0"  
   #key_pair_name     = "your-key-pair-name" 
 
   user_data = <<-EOF
